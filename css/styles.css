@@ -1,0 +1,249 @@
+/* GENERAL FORMATTING */
+
+/* Sections color palette*/
+    .colored-dark-section{
+        background-color: #ff4c68; 
+        color: white;
+    }
+
+    .white-section{
+        background-color: white;
+    }
+
+    .peach-section{
+        background-color: #ef8172;
+        color: white;
+    }
+
+
+/* Font families */
+    #title, #features, #testimonials, #pricing, #cta{
+        font-family: 'Montserrat';
+        text-align: center;
+    }
+
+    #tindog-brand, .get-btn{
+        font-family: 'Ubuntu';
+    }
+
+
+/* Line height settings */
+
+    #intro, .textimonial, #price-title, .plan-price{
+        line-height: 1.5;
+    }
+
+
+/* Font weights */
+    #tindog-brand, .feature, .plan-name, .plan-price, .cta, #price-title, .textimonial {
+        font-weight: bold;
+    }
+
+
+/* Text align */
+    #feature-container, #testimonials, #press, #pricing, #cta, #footer{
+        text-align: center;
+    }
+
+/* Font size */
+    .feature, .plan-name{
+        font-size: 1.5rem;
+    }
+
+    .nav-link, .get-btn{
+        font-size: 1.3rem;
+    }
+
+    .textimonial, #price-title, .cta{
+        font-size: 3rem;
+    }
+
+    .feat-desc, #price-description, #footer{
+        font-size: 1.2rem;
+}
+
+/* Font colors */
+.feat-desc, #price-description, #copyright{
+    color: #8f8f8f;
+}
+
+
+
+/* AREAS OF THE WEBSITE */
+
+/* First header */
+
+    #tindog-brand{
+        /* Sets the font parameters of the brand name in the navbar */
+        font-size: 2.5rem; /* Sets the font size to 2.5 X 14px*/
+    }
+
+    #navbar{
+        /* Space at the bottom of the entire navbar */
+        padding-bottom: 4.5rem;
+    }
+
+    .nav-link{
+        /* Sets the font appearence of the navbar links */
+        font-weight: thin;
+    }
+
+    .nav-item{
+        /*Sets the padding to the link buttons of the navbar, individually*/
+        padding: 0px 20px;
+    }
+
+    #intro{
+        font-weight: 900; /*Bolder font weight*/
+        font-size: 3.5rem;
+    }
+
+    .container-fluid{
+        /*Sets the padding of the entire title section*/
+        text-align: left;
+        padding: 3% 15% 7%;
+    }
+
+    .iphone-img-container{
+        position: relative;
+    }
+
+    #iphone-img{
+        max-width: 50%;
+        transform: rotate(25deg);
+        position: absolute; /*Removes the image from the html flow and makes it covered by the next section*/
+    }
+    .download-btn{
+        /* Sets the margin of the download buttons */
+        margin: 5% 3% 5% 0;
+    }
+
+    @media (max-width:1245px){
+        /*When the screen width is smaller than 1245px, the following settings are applied*/
+
+        .container-fluid, #intro{
+            text-align: center;
+            /*Aligns the content of the title section to the center*/
+        }
+        #iphone-img{
+            /*Makes the image static and stops it from being covered by the next section*/
+            position: static;
+            transform: rotate(0);
+        }
+    }
+
+
+
+
+/* Features section */
+
+    .feature-box{
+        place-content: center;
+        margin: auto;
+    }
+
+    #features{
+        /*Changes the appearence of this section*/
+        padding: 7% 15%;
+        position: relative; /*Makes it appear over the #iphone-img element*/
+    }
+
+    .feature-icons{
+        /* Sets the appearence of the icons */
+        color: #ef8172;
+        font-size: 4rem;
+        margin-bottom: 20px; /*Adds a margin to space the icon from the title of the description*/
+    }
+
+    .feature-icons:hover{
+        /* Sets the appearence of the icons on hover */
+        color: #ff4c68;
+    }
+
+
+
+/* Testimonials Section */
+
+    .carousel-item {
+        /*Sets the padding of the carousel item = the container of the item*/
+        padding: 5% 20%;
+    }
+
+    .testimonial-img{
+        /* Sets the configuration and the size of the testimonial's author's profile picture */
+        width: 10%;
+        border-radius: 100%;
+        padding: 20px;
+    }
+
+
+
+/* Press Section*/
+
+    #press{ 
+        /* Sets the configuration of this section*/
+        padding-bottom: 3%; /* Adds some space to the bottom of the section */
+    }
+
+    .press-img{
+        /*Sets the size and margins of each press-img element*/
+        margin: 20px 20px 50px;
+        width: 13%;
+    }
+
+
+
+/* Pricing Section */
+
+    #pricing{
+        /* Sets the configuration of this section */
+        padding: 5% 7%;
+    }
+
+
+    .plan-price{
+        font-size: 2.8rem;
+    }
+
+    .card{
+        padding: 0px; /* Makes the card have zero padding so the plan title occupies 100% of the column width*/
+    }
+
+    .card-deck {
+        margin: 1%; /*Gives the card deck a margin on all 4 sides*/
+        margin-top: 5%; /*Gives the top side of the container a larger margin*/
+        row-gap: 10px; /*When occupying 2 or more rows, there's space between them*/
+    }
+
+
+
+/* CTA Section */
+
+    #cta{
+        padding: 7% 25%;
+    }
+
+    .button2{
+        margin-top: 5%; /*Adds a margin to the top of the bottom to separate them from the cta text*/
+    }
+
+    #button-2-1{
+        margin-right: 2%;
+    }
+
+
+
+/* Footer Section */
+
+    #footer{
+        /* Sets the appearence of this section */
+        padding: 6% 25% 5%; /*Makes the content centered + gives some top and bottom spaces*/
+    }
+
+    .social-icon-m, .social-icon{
+        padding-bottom: 3%; /* Separates the icons from the copyright text*/
+    }
+
+    .social-icon-m{
+        margin-right: 2%; /*Gives a space between the icons*/
+    }
